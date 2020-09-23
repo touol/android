@@ -7,7 +7,7 @@ if (!defined('MODX_API_MODE')) {
     define('MODX_API_MODE', false);
 }
 
-dirname(dirname(dirname(dirname(__FILE__))) . '/config.core.php');
+include(dirname(dirname(dirname(dirname(__FILE__)))) . '/config.core.php');
 if (!defined('MODX_CORE_PATH')) define('MODX_CORE_PATH', dirname(dirname(dirname(dirname(__FILE__)))) . '/core/');
 
 include_once (MODX_CORE_PATH . "model/modx/modx.class.php");
